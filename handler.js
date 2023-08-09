@@ -12,10 +12,13 @@ function review(res) {
     fs.createReadStream(__dirname + '/review.html', 'utf8').pipe(res)
 }
 
-function api_records(res, params) {
+function api_records(res) {
     console.log('api_records')
     res.writeHead(200, { 'Content-Type': 'application/json' })
-    res.end(JSON.stringify(params))
+    var jsonObj={
+        name:'caofeifei'
+    }
+    res.end(JSON.stringify(jsonObj))
 }
 
 module.exports = {
@@ -23,3 +26,5 @@ module.exports = {
     review: review,
     api_records: api_records
 }
+
+
