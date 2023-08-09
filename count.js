@@ -3,12 +3,12 @@ var counter = function (arr) {
 }
 
 var adder = function (a, b) {
-    return `the sum of the 2 numbers is ${a+b}`
+    return `the sum of the 2 numbers is ${a+pi}`
 }
 
 var pi = 3.14
 
-// 只有一个时可以这样导入
+// 只有一个时这样导入
 // module.exports = counter
 
 /*
@@ -18,9 +18,9 @@ module.exports.pi = pi
 */
 
 module.exports = {
-    counter: counter,
-    adder: adder,
-    pi: pi,
+    Counter: counter,
+    Adder: adder,
+    Pi: pi,
 }
 /* 对象可以简写
 module.exports = {

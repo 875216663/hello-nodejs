@@ -1,5 +1,6 @@
+//导入count这个文件夹的东西
 var stuff = require('./count')
 
-console.log(stuff.counter(['ruby', 'nodejs', 'react']))
-console.log(stuff.adder(3, 2))
-console.log(stuff.pi)
+console.log(stuff.Counter(['ruby', 'nodejs', 'react']))
+console.log(stuff.Adder(3))
+console.log(stuff.Pi)
