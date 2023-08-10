@@ -8,7 +8,9 @@
 </head>
 <body>
     hello world
+    <!-- //当表单被提交时，数据会被发送到服务器上的 /api/v1/records 这个地址 -->
     <form action="/api/v1/records" method="POST">
+    
         name1: <input type="text" name="name"/>
         age: <input type="text" name="age"/>
         <input type="submit" value="submit">

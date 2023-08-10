@@ -1,14 +1,11 @@
 var http = require('http')
 var fs = require('fs')  //可以引入数据流
 
-
-
-
 function startServer(route,handle){
         //有请求时候发起
     var onRequest = function (req, res) {
         console.log('request received'+req.url)
-        route(handle,req.url)
+        route(handle,req.url,res)
         // res.writeHead(200, { 'Content-Type': 'text/html' })
         // // res.writeHead(200, { 'Content-Type': 'text/plain' })
         // //创建一个读取流来读取当前目录下的 index.html 文件
